@@ -8,24 +8,6 @@ model=pickle.load(open('ml_model.sav', 'rb'))
 class Indexview(generic.TemplateView):
     template_name="index.html"
 
-def getPredictions(list1):
-    model = pickle.load(open('../ml_model.sav', 'rb'))
-    prediction =model.predict([list1])
-    
-    if prediction == 1:
-        return 'Lonely'
-    elif prediction==2:
-        return "Anxiety"
-    elif prediction==3:
-        return "Stress"
-    elif prediction==4:
-        return "Depression"
-    else:
-        return 'Normal'
-# list1=[]
-# for i in range(17):
-#     list1.append(random.randint(0,1))
-# print(getPredictions(list1))
 class Surveyview(generic.TemplateView):
     template_name="Survey.html"
     
