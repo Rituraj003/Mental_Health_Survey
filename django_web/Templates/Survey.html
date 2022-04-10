@@ -23,9 +23,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="{% url 'index_view' %}" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
-    <a href="{% url 'survey_view' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Survey</a>
-    <a href="{% url 'depression_view' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Depression</a>
+    <a href="{% url 'index_view'%}" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="{% url 'survey_view'%}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Survey</a>
+    <a href="{% url 'depression_view'%}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Depression</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -45,127 +45,121 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-padding-64  w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h2 id=form-prompt>Have you been experiencing episodes of nervousnessness recently?</h2>
-      <form id="form" name="one" action="me.jsp" method="post">
-        <input type="radio" id="Ques1" name="ques1" value=1 required >
-        <label for="Ques1">Yes</label>
-        <input type="radio" id="Ques1" name="ques1" value=0 >
-        <label for="Ques1">No</label>
-      </form>
-      <h2 id=form-prompt>Have you had any panic attacks recently?</h2>
-      <form id="form" name="two" action="me.jsp" method="post">
-          <input type="radio" id="Ques2" name="ques2" value=1 required>
-          <label for="Ques2">Yes</label>
-          <input type="radio" id="Ques2" name="ques2" value=0>
-          <label for="Ques2">No</label>
-      </form>
-      <h2 id=form-prompt>Have you been having trouble concentrating?</h2>
-      <form id="form" name="three" action="me.jsp" method="post">
-        <input type="radio" id="Ques3" name="ques3" value=1 required>
-        <label for="Ques3">Yes</label>
-        <input type="radio" id="Ques3" name="ques3" value=0>
-        <label for="Ques3">No</label>
-      </form>
-      <h2 id=form-prompt>Have you been having trouble sleeping?</h2>
-      <form id="form" name="four" action="me.jsp" method="post">
-          <input type="radio" id="Ques4" name="ques4" value=1 required>
-          <label for="Ques4">Yes</label>
-          <input type="radio" id="Ques4" name="ques4" value=0>
-          <label for="Ques4">No</label>
-      </form>
-      <h2 id=form-prompt>Have you been struggling with work?</h2>
-      <form id="form" name="five" action="me.jsp" method="post">
-        <input type="radio" id="Ques5" name="ques5" value=1 required>
-        <label for="Ques5">Yes</label>
-        <input type="radio" id="Ques5" name="ques5" value=0>
-        <label for="Ques5">No</label>
-      </form>
-      <h2 id=form-prompt>Have you been having feelings of hopelessness?</h2>
-      <form id="form" name="six" action="me.jsp" method="post">
-          <input type="radio" id="Ques6" name="ques6" value=1 required>
-          <label for="Ques6">Yes</label>
-          <input type="radio" id="Ques6" name="ques6" value=0>
-          <label for="Ques6">No</label>
-      </form>
-      <h2 id=form-prompt>Have you been overreacting to situations recently?</h2>
-      <form id="form" name="seven" action="me.jsp" method="post">
-        <input type="radio" id="Ques7" name="ques8" value=1 required>
-        <label for="Ques7">Yes</label>
-        <input type="radio" id="Ques7" name="ques7" value=0>
-        <label for="Ques7">No</label>
-      </form>
-      <h2 id=form-prompt>Have your eating habits severely changed recently?</h2>
-      <form id="form" name="eight" action="me.jsp" method="post">
-          <input type="radio" id="Ques8" name="ques8" value=1 required>
-          <label for="Ques8">Yes</label>
-          <input type="radio" id="Ques8" name="ques8" value=0>
-          <label for="Ques8">No</label>
-      </form>
-      <h2 id=form-prompt>Have you had any suicidal thoughts recently?</h2>
-      <form id="form" name="nine" action="me.jsp" method="post">
-        <input type="radio" id="Ques9" name="ques9" value=1 required>
-        <label for="Ques9">Yes</label>
-        <input type="radio" id="Ques9" name="ques9" value=0>
-        <label for="Ques9">No</label>
-      </form>
-      <h2 id=form-prompt>Have you been feeling unmotivated?</h2>
-      <form id="form" name="ten" action="me.jsp" method="post">
-          <input type="radio" id="Ques10" name="ques10" value=1 required>
-          <label for="Ques10">Yes</label>
-          <input type="radio" id="Ques10" name="ques10" value=0>
-          <label for="Ques10">No</label>
-      </form>
-      <h2 id=form-prompt>Do you think that you are addicted to social media?</h2>
-      <form id="form" name="eleven" action="me.jsp" method="post">
-        <input type="radio" id="Ques11" name="ques11" value=1 required>
-        <label for="Ques11">Yes</label>
-        <input type="radio" id="Ques11" name="ques11" value=0>
-        <label for="Ques11">No</label>
-      </form>
-      <h2 id=form-prompt>Have you gained or lost a lot of weight recently?</h2>
-      <form id="form" name="twelve" action="me.jsp" method="post">
-          <input type="radio" id="Ques12" name="ques12" value=1 required>
-          <label for="Ques12">Yes</label>
-          <input type="radio" id="Ques12" name="ques12" value=0>
-          <label for="Ques12">No</label>
-      </form>
-      <h2 id=form-prompt>Do you find yourself growing attached to material things?</h2>
-      <form id="form" name="thirteen" action="me.jsp" method="post">
-        <input type="radio" id="Ques13" name="ques13" value=1 required>
-        <label for="Ques13">Yes</label>
-        <input type="radio" id="Ques13" name="ques13" value=0>
-        <label for="Ques13">No</label>
-      </form>
-      <h2 id=form-prompt>Do you consider yourself an introvert?</h2>
-      <form id="form" name="fourtheen" action="me.jsp" method="post">
-          <input type="radio" id="Ques14" name="ques14" value=1 required>
-          <label for="Ques14">Yes</label>
-          <input type="radio" id="Ques14" name="ques14" value=0>
-          <label for="Ques14">No</label>
-      </form>
-      <h2 id=form-prompt>Do you find yourself remembering stressful memories of the past?</h2>
-      <form id="form" name="fifteen" action="me.jsp" method="post">
-        <input type="radio" id="Ques15" name="ques15" value=1 required>
-        <label for="Ques15">Yes</label>
-        <input type="radio" id="Ques15" name="ques15" value=0>
-        <label for="Ques15">No</label>
-      </form>
-      <h2 id=form-prompt>Have you had any negative thoughts recently?</h2>
-      <form id="form" name="sixteen" action="me.jsp" method="post">
-          <input type="radio" id="Ques16" name="ques16" value=1 required>
-          <label for="Ques16">Yes</label>
-          <input type="radio" id="Ques16" name="ques16" value=0>
-          <label for="Ques16">No</label>
-      </form>
-      <h2 id=form-prompt>Do you blame yourself for things a lot?</h2>
-      <form id="form" name="seventeen" action="me.jsp" method="post">
-        <input type="radio" id="Ques17" name="ques17" value=1 required>
-        <label for="Ques17">Yes</label>
-        <input type="radio" id="Ques17" name="ques17" value=0>
-        <label for="Ques17">No</label>
-      </form>
-      <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Submit</button>
+      <form id="form" name="one" action="result">
+        <div class="Question">
+          <h2 id=form-prompt>Have you been experiencing episodes of nervousnessness recently?</h2>
+          <input type="radio" id="Ques1" name="ques1"  required >Yes</input>
+          <input type="radio" id="Ques1" name="ques1" value=0 >No</input>
+        </div>
 
+
+        <div class="Question">
+          <h2 id=form-prompt>Have you had any panic attacks recently?</h2>
+          <input type="radio" id="Ques2" name="ques2" value=1 required>Yes<input>
+          <input type="radio" id="Ques2" name="ques2" value=0>No</input>
+        </div>
+        
+        
+        <div class="Question">
+          <h2 id=form-prompt>Have you been having trouble concentrating?</h2>
+          <input type="radio" id="Ques3" name="ques3" value=1 required>Yes<input>
+          <input type="radio" id="Ques3" name="ques3" value=0>No<input>
+
+        </div>
+        
+        <div class="Question">
+          <h2 id=form-prompt>Have you been having trouble sleeping?</h2>
+          <input type="radio" id="Ques4" name="ques4" value=1 required>Yes<input>
+          <input type="radio" id="Ques4" name="ques4" value=0>No<input>
+        </div>
+        
+        <div class="Question">
+          <h2 id=form-prompt>Have you been struggling with work?</h2>
+          <input type="radio" id="Ques5" name="ques5" value=1 required>Yes</input>
+          <input type="radio" id="Ques5" name="ques5" value=0>No</input>
+        </div>
+
+        <div class="Question">
+          <h2 id=form-prompt>Have you been having feelings of hopelessness?</h2>
+          <input type="radio" id="Ques6" name="ques6" value=1 required>Yes</input>
+          <input type="radio" id="Ques6" name="ques6" value=0>No</input>
+        </div>
+
+        <div class="Question">
+          <h2 id=form-prompt>Have you been overreacting to situations recently?</h2>
+          <input type="radio" id="Ques7" name="ques8" value=1 required>Yes</input>
+          <input type="radio" id="Ques7" name="ques7" value=0>No</input>
+        </div>
+
+        
+        <div class="Question">
+          <h2 id=form-prompt>Have your eating habits severely changed recently?</h2>
+          <input type="radio" id="Ques8" name="ques8" value=1 required>Yes</input>
+          <input type="radio" id="Ques8" name="ques8" value=0>No</input>
+        </div>
+
+        
+        <div class="Question">
+          <h2 id=form-prompt>Have you had any suicidal thoughts recently?</h2>
+          <input type="radio" id="Ques9" name="ques9" value=1 required>Yes</input>
+          <input type="radio" id="Ques9" name="ques9" value=0>No</input>
+        </div>
+
+        
+        <div class="Question">
+          <h2 id=form-prompt>Have you been feeling unmotivated?</h2>
+          <input type="radio" id="Ques10" name="ques10" value=1>Yes</input>
+          <input type="radio" id="Ques10" name="ques10" value=0>No</input>
+        </div>
+
+        <div class="Question">
+          <h2 id=form-prompt>Do you think that you are addicted to social media?</h2>
+          <input type="radio" id="Ques11" name="ques11" value=1 required>Yes</input>
+          <input type="radio" id="Ques11" name="ques11" value=0>No</input>
+        </div>
+        
+        
+        <div class="Question">
+          <h2 id=form-prompt>Have you gained or lost a lot of weight recently?</h2>
+          <input type="radio" id="Ques12" name="ques12" value=1 required>Yes</input>
+          <input type="radio" id="Ques12" name="ques12" value=0>No</input> 
+        </div>
+      
+        <div class="Question">
+          <h2 id=form-prompt>Do you find yourself growing attached to material things?</h2>
+          <input type="radio" id="Ques13" name="ques13" value=1 required>Yes</input>
+          <input type="radio" id="Ques13" name="ques13" value=0>No</input>
+        </div>
+
+        
+        <div class="Question">
+          <h2 id=form-prompt>Do you consider yourself an introvert?</h2>
+          <input type="radio" id="Ques14" name="ques14" value=1 required>Yes</input>
+          <input type="radio" id="Ques14" name="ques14" value=0>No</input>
+        </div>
+        
+        <div class="Question">
+          <h2 id=form-prompt>Do you find yourself remembering stressful memories of the past?</h2>
+          <input type="radio" id="Ques15" name="ques15" value=1 required>Yes</input>
+          <input type="radio" id="Ques15" name="ques15" value=0>No</input>
+        </div>
+
+        
+        <div class="Question">
+          <h2 id=form-prompt>Have you had any negative thoughts recently?</h2>
+          <input type="radio" id="Ques16" name="ques16" value=1 required>Yes</input>
+          <input type="radio" id="Ques16" name="ques16" value=0>No</input>
+        </div>
+
+        
+        <div class="Question">
+          <h2 id=form-prompt>Do you blame yourself for things a lot?</h2>
+          <input type="radio" id="Ques17" name="ques17" value=1 required>Yes</input>
+          <input type="radio" id="Ques17" name="ques17" value=0>No</input>
+        </div>
+
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Submit</button>
+      </form>
     </div>
   </div>
 </div>
